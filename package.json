@@ -1,0 +1,24 @@
+{
+  "name": "objectify-error",
+  "version": "1.0.0",
+  "description": "creates error object from enumerable and non-enumerable properties of error objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxharris9/objectify-error.git"
+  },
+  "keywords": [
+    "non-enumerable",
+    "enumerable",
+    "error",
+    "object"
+  ],
+  "author": "Max Harris <harris.max@gmail.com> (http://xyzzy.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^4.0.0"
+  }
+}
