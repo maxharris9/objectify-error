@@ -1,6 +1,6 @@
 {
   "name": "objectify-error",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "creates error object from enumerable and non-enumerable properties of error objects",
   "main": "index.js",
   "scripts": {
