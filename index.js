@@ -1,20 +1,10 @@
-function objectifyError(error, keyArray) {
+function objectifyError (error) {
+  if (!error) return null;
+
   var errorObject = {};
-
-  keyArray = keyArray || ['code', 'message', 'name', 'stack', 'type'];
-
-  if (!error) return {};
-
-  // forward non-enumerable properties
-  keyArray.forEach(function (key) {
+  Object.getOwnPropertyNames(error).forEach(function(key) {
     errorObject[key] = error[key];
   });
-
-  // forward any custom, enumerable properties
-  Object.keys(error).forEach(function (index) {
-    errorObject[index] = error[index];
-  });
-
   return errorObject;
 }
 

@@ -16,7 +16,7 @@
     "error",
     "object"
   ],
-  "author": "Max Harris <harris.max@gmail.com> (http://xyzzy.com/)",
+  "author": "Max Harris <harris.max@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "tape": "^4.0.0"
