@@ -8,6 +8,12 @@ test('handles no error', function (t) {
   t.end();
 });
 
+test('handles non-object argument', function (t) {
+  var tmp = objerr(true);
+  t.equals(tmp, null, 'received expected null return value');
+  t.end();
+});
+
 test('nameless error', function (t) {
   var tmp = objerr(new Error());
 

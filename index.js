@@ -1,5 +1,5 @@
 function objectifyError (error) {
-  if (!error) return null;
+  if ('object' !== typeof error) return null;
 
   var errorObject = {};
   Object.getOwnPropertyNames(error).forEach(function(key) {
